@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Banner TLOU Mejorado</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #0f0f0f, #1c1c1c);
+    overflow: hidden;
+    font-family: 'Arial Black', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner {
+    padding: 10px 30px;
+    border: 2px solid #ffffff30;
+    border-radius: 15px;
+    background: linear-gradient(to right, #151515, #292929);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    font-size: 42px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    animation: pulse 2s infinite;
+    margin-bottom: 20px;
+  }
+  @keyframes pulse {
+    0% { transform: scale(1); opacity: 0.9; }
+    50% { transform: scale(1.05); opacity: 1; }
+    100% { transform: scale(1); opacity: 0.9; }
+  }
+  .socials {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    animation: fadeIn 3s ease forwards;
+  }
+  .socials div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .socials img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    margin-bottom: 5px;
+  }
+  .socials span {
+    font-size: 16px;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .reminder {
+    margin-top: 30px;
+    font-size: 20px;
+    animation: blink 1s infinite;
+  }
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+</style>
+</head>
+<body>
+  <div class="banner">The Last of Us</div>
+  <div class="socials">
+    <div>
+      <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok">
+      <span>@ViriOfisial</span>
+    </div>
+    <div>
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+      <span>@joseluviri</span>
+    </div>
+    <div>
+      <img src="https://cdn-icons-png.flaticon.com/128/15047/15047294.png" alt="Twitch">
+      <span>@ViriOfisial</span>
+    </div>
+  </div>
+  <div class="reminder">¡Sígueme para más contenido épico! 🚀</div>
+</body>
+</html>
